@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: darkgrey;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+    margin: 3px;
+    flex-grow: 1;
+}
+
+input[type="text"] {
+    min-width: 200px;
+}
+
+
+input[type="email"] {
+    min-width: 200px;
+}
+
+input[type=date] {
+    min-width: 200px;
+}
+
+input[type=radio] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+input[type=checkbox] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    width: 100%;
+}
+
+label {
+    flex-grow: 1;
+    min-width: 130px;
+    display: inline-block;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    
+}
