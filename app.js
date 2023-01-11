@@ -1,4 +1,5 @@
-const app = require('./setup.js').app
+const setup = require('./setup.js')
+const app = setup.app
 
 //Handler fremsiden
 // -- Old way: --
@@ -8,7 +9,7 @@ const app = require('./setup.js').app
     //app.get('',hovedSideRute)
 // -- New way: -- 
 app.get('', function (request,response) {
-    response.render("index.hbs")
+    response.render("index.hbs", {title: "Tittelen"})
 })
 
 //Handler about-siden
