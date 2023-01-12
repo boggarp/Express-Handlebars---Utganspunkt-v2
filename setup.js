@@ -18,4 +18,8 @@ app.set("view engine", hbs)
 app.set('views',viewPath)
 hbs.registerPartials(partialsPath)
 
+const sqlite3 = require('better-sqlite3')
+const db = sqlite3('database.db', {verbose:console.log})
+
 exports.app = app
+exports.db = db

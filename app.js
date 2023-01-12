@@ -1,5 +1,6 @@
 const setup = require('./setup.js')
 const app = setup.app
+const db = setup.db
 
 //Handler fremsiden
 // -- Old way: --
