@@ -8,7 +8,7 @@ const app = setup.app
     //}
     //app.get('',hovedSideRute)
 // -- New way: -- 
-app.get('', function (request,response) {
+app.get('', (request,response) => {
     response.render("index.hbs", {title: "Tittelen"})
 })
 
