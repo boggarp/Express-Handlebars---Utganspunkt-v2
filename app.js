@@ -3,19 +3,21 @@ const app = setup.app
 const db = setup.db
 
 //Handler fremsiden
-// -- Old way: --
-    //function hovedSideRute(request, response){
-    //    response.render("index.hbs")
-    //}
-    //app.get('',hovedSideRute)
-// -- New way: -- 
 app.get('', (request,response) => {
-    response.render("index.hbs", {title: "Tittelen"})
+    response.render("index.hbs", {
+        title: "Tittelen", 
+        table: ["A","B","C"]})
 })
 
 //Handler about-siden
+app.get('/about', (request,response) => {
+    response.render("about.hbs", {title: "About"})
+})
 
-//Handler for Innput - skjema
+//Handler for html-skjema med action /sendInn og method post
+app.post('/sendInn', (request,response) => {
+    console.log(request.body)
+})
 
 //Starter opp applikasjonen
 app.listen(3000, function() { 
