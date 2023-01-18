@@ -1,9 +1,9 @@
-body {
+.form {
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
     color: darkgrey;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;

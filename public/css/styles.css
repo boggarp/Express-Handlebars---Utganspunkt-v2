@@ -8,3 +8,17 @@ body{
     background-color: grey;
     margin: 20px;
 }
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    background-color: rgb(46, 46, 46);
+    padding: 7px;
+}
+
+nav a:hover{
+
+    background-color: rgb(84, 84, 84);
+
+}
