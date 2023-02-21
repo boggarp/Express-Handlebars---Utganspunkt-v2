@@ -1,6 +1,9 @@
 body{
     color: white;
     background-color: black;
+    max-width: 650px; /* Only full width on small screens */
+    margin: 0 auto; /* Center the body */
+    padding: 5px; /*Padding makes it look good on small screens */
 }
 
 .content p {

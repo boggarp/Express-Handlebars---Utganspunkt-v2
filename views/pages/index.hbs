@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
-    <title>{{title}}</title>
+    <title>Utganspunkt v2</title>
 </head>
 <body>
     {{>header}}
-    <p> Dette er index.hbs</p>
+    <p> Dette er index.hbs, siden har tilgang til tabellen table, og variabelen.</p>
+    <p> Variabelen har verdien: {{variable}}</p>
+    <p> Tabellen har denne verdien:</p>
     <div class="content">
         {{#each table}}
             <p>{{this}} </p>

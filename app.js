@@ -4,9 +4,14 @@ const db = setup.db
 
 //Handler fremsiden
 app.get('', (request,response) => {
+
+    table = ["A","B","C"]
+    variable = "Alfabetet"
+
     response.render("index.hbs", {
-        title: "Tittelen", 
-        table: ["A","B","C"]})
+        table, 
+        variable
+       })
 })
 
 //Handler about-siden
@@ -20,6 +25,6 @@ app.post('/sendInn', (request,response) => {
 })
 
 //Starter opp applikasjonen
-app.listen(3000, function() { 
+app.listen(process.env.PORT || 3000, function() { 
     console.log("Server is up! Check http://localhost:3000")
 })
