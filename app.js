@@ -1,3 +1,4 @@
+const bcrypt = require('bcrypt');
 const setup = require('./setup.js')
 const app = setup.app
 const db = setup.db
