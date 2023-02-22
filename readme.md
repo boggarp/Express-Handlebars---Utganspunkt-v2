@@ -7,7 +7,7 @@ express, express-session, bcrypt, better-sqlite3
 I setup.js står kode som kjøres i starten av de fleste express prosjekt
 
 ### app.js
-app.js er hovedprogrammet. Start app.js med kommandoen node .\app.js
+app.js er hovedprogrammet. Start app.js med kommandoen ```node .\app.js```
 
 ### database
 Prosjektet bruker sqlite-database og better-sqlite3.
