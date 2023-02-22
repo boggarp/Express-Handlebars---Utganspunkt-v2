@@ -1,16 +1,28 @@
 # Generell Info
-Kjør følgende kommando for å få alle pakkene-du trenger:
-npm install
 
+### Moduler brukt
+express, express-session, bcrypt, better-sqlite3
+
+### setup.js
 I setup.js står kode som kjøres i starten av de fleste express prosjekt
 
+### app.js
 app.js er hovedprogrammet. Start app.js med kommandoen node .\app.js
 
-Installer node herfra:
-https://nodejs.org/en/
+### database
+Prosjektet bruker sqlite-database og better-sqlite3.
+Viss koden kjøres på Azure, brukes databasen i minne, og
+lagres periodisk til fil.
 
-Grafisk brukergrensesnitt til databasen (database.db):
+
+## For å komme igang
+- Installer node herfra: https://nodejs.org/en/
+
+- Kjør følgende kommando for å få alle pakkene-du trenger:
+```npm install```
+
+- Grafisk brukergrensesnitt til databasen (database.db):
 https://sqlitestudio.pl/
 
-Data-base-plugin til Visual Studio:
+- Data-base-plugin til Visual Studio:
 https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite
