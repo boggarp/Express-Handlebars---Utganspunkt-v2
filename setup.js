@@ -35,7 +35,7 @@ let db;
 if (process.env.WEB_SITE_NAME) { //Running on Azure, . 
     console.log("Running on Azure, using Db in memory, saving periodicly")
     db = loadDbToMemory('database.db') //Use DB in Memory
-    saveDb('database.db',30,true) //Save database to file periodicly
+    saveDb('database.db',15,true) //Save database to file periodicly
 } else { //Running Local
     console.log("Not Running on Azure, using Db in filemode")
     db = sqlite3('database.db', {verbose:console.log})
