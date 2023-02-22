@@ -10,7 +10,7 @@ I setup.js står kode som kjøres i starten av de fleste express prosjekt
 app.js er hovedprogrammet. Start app.js med kommandoen ```node .\app.js```
 
 ### database
-Prosjektet better-sqlite3.  
+Prosjektet bruker better-sqlite3 for databasehåndtering.  
 Viss koden kjøres på Azure, brukes databasen i minne, og
 lagres periodisk til fil.
 
