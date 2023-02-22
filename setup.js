@@ -49,7 +49,7 @@ exports.db = db
 ///                                 Funksjoner                               ///
 ///  1 - loadDbToMemory: Last database til minne, og bruk den derfil         ///
 ///  2 - saveDb        : Lagre database fra minne til fil, mulighet for      ///
-///                      å gjøre det automatisk hvert 30min f.eks            ///
+///                      å gjøre det automatisk hvert 15min f.eks            ///
 ////////////////////////////////////////////////////////////////////////////////
 
 /**
